@@ -7,17 +7,11 @@ Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon m
 1. Create DataFrames to match production-ready tables from two big Amazon customer review datasets.
 2. Analyze whether reviews from Amazon's Vine program are trustworthy.
 
-- - -
-
-## Instructions
-
-### Level 1
+## Level 1
 
 * Use the furnished schemata to create tables in your RDS database.
 
 * Create two separate ZEPL notebooks and **extract** any two datasets from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), one into each notebook.
-
-  **Note:** It is possible to ETL both data sources in a single notebook, but due to the large data sizes, it will be easier to work with these S3 data sources in two separate ZEPL notebooks.
 
 * Be sure to handle the header correctly. If you read the file without the header parameter, you may find that the column headers are included in the table rows.
 
@@ -27,9 +21,9 @@ Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon m
 
   * **Transform** the dataset to fit the tables in the [schema file](../Resources/schema.sql). Be sure the DataFrames match in data type and in column name.
 
-  * **Load** the DataFrames that correspond to tables into an RDS instance. **Note:** This process can take up to 10 minutes for each. Be sure that everything is correct before uploading.
+  * **Load** the DataFrames that correspond to tables into an RDS instance.
 
-### Level 2 (Optional)
+## Level 2
 
 In Amazon's Vine program, reviewers receive free products in exchange for reviews.
 
@@ -44,8 +38,6 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 * While there are no hard requirements for the analysis, consider steps you can take to reduce noisy data, e.g., filtering for reviews that meet a certain number of helpful votes, total votes, or both.
 
 * Submit a summary of your findings and analysis.
-
-- - -
 
 ## Resources
 
