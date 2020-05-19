@@ -17,7 +17,7 @@ Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon m
 
   * Counted the number of records (rows) in the dataset.
 
-  * **Transformed** the dataset to fit the tables in the [schema file](../Resources/schema.sql).
+  * **Transformed** the dataset to fit the tables in the [schema file](../level-1/schema.sql).
 
   * **Loaded** the DataFrames that correspond to tables into an RDS instance.
 
